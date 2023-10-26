@@ -263,15 +263,17 @@ export class TreeView extends EventEmitter {
             const content = element.parentElement.nextElementSibling;
             const closeDetails = content.animate(
               {
-                opacity: [0, 1],
+                opacity: [1, 0],
                 height: [content.offsetHeight + 'px', 0],
               },
               {
                 //direction: 'reverse',
+                //fill: 'forwards',
                 duration: 560,
                 easing: 'ease-out',
               }
             );
+
             closeDetails.onfinish = () => {
                  element.parentElement.classList.add("collapsed");
             }
