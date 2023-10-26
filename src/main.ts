@@ -78,8 +78,26 @@ import { TreeView } from './treeview.ts'
 
     }
 
+    function onMoveUp(event) {
+	    console.log("onMoveUp");
+    }
+    function onMoveDown(event) {
+	    console.log("onMoveDown");
+    }
+    function onMoveLeft(event) {
+	    console.log("onMoveLeft");
+    }
+    function onMoveRight(event) {
+	    console.log("onMoveRight");
+    }
+    
     document.querySelector("nav .all-group-expand").addEventListener("click", onAllGroupExpand);
     document.querySelector("nav .all-group-close").addEventListener("click", onAllGroupClose);
+
+    document.querySelector("nav .move-up").addEventListener("click", onMoveUp);
+    document.querySelector("nav .move-down").addEventListener("click", onMoveDown);
+    document.querySelector("nav .move-left").addEventListener("click", onMoveLeft);
+    document.querySelector("nav .move-right").addEventListener("click", onMoveRight);
 
     document.querySelector("nav .create-item").addEventListener("click", onClickCreate);
     document.querySelector("nav .create-group").addEventListener("click", onClickCreate);

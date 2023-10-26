@@ -84,6 +84,16 @@ ol.tree {
     }
   }
 
+  li.group {
+    /* background-color: #ffffcc; */
+    border-left: 6px solid #1E90FF;
+  }
+
+  li.item {
+    /* background-color: #ffffcc; */
+    border-left: 6px solid #33CC66;
+  }
+
   li.item, li.group {
     background-clip: border-box;
     /* background-color: #ffffcc; */
